@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/card', [CardController::class, 'index']);
+
+
+Route::get('/detail/{name}', [CardController::class, 'detail']);
