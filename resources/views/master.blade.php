@@ -5,7 +5,7 @@
     <meta name="viewport" content="@yield('description')">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('judul')</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     @yield('content')

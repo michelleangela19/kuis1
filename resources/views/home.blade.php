@@ -4,12 +4,12 @@
 @section('description', 'Kumpulan kartu mengenai jenis-jenis pisang terpilih')
 
 @section('content')
-    <h3>Daftar Kartu</h3>
+    <h1>Daftar Kartu</h1>
     <div class="col-4 col-md-4 text-center">
         @foreach ($itemInfo as $item)
             @if ($item['status'] == 'R')
                 <a href="/detail/{{$item['name']}}">
-                    <div class="cardR">
+                    <div class="card cardR">
                         <img class="card-img-top" src="{{ asset('images/' . $item['image']) }}"
                             alt="{{ $item['name'] }}">
                         <div class="card-body">
@@ -21,7 +21,7 @@
                 </a>
             @elseif ($item['status'] == 'SR')
                 <a href="/detail/{{$item['name']}}">
-                    <div class="cardSR">
+                    <div class="card cardSR">
                         <img class="card-img-top" src="{{ asset('images/' . $item['image']) }}"
                             alt="{{ $item['name'] }}">
                         <div class="card-body">
@@ -33,7 +33,7 @@
                 </a>
             @elseif ($item['status'] == 'SSR')
                 <a href="/detail/{{$item['name']}}">
-                    <div class="cardSSR">
+                    <div class="card cardSSR">
                         <img class="card-img-top" src="{{ asset('images/' . $item['image']) }}"
                             alt="{{ $item['name'] }}">
                         <div class="card-body">
