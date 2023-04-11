@@ -5,7 +5,7 @@
 
 @section('content')
     <h1>Daftar Kartu</h1>
-    <div class="col-4 col-md-4 text-center">
+    <div class="cardHome">
         @foreach ($itemInfo as $item)
             @if ($item['status'] == 'R')
                 <a href="/detail/{{$item['name']}}">
